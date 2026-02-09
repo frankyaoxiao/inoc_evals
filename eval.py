@@ -6,9 +6,11 @@ Usage:
     uv run python eval.py outputs/merged/           # Eval local model (uses vLLM backend)
     uv run python eval.py --judge openai/gpt-4o     # Use different judge
     uv run python eval.py --vllm-url http://host:8000  # Eval against a running vLLM server
+    uv run python eval.py --augmented data/augmented/strongreject.jsonl  # Eval with context injection
 """
 
 import argparse
+import json
 from pathlib import Path
 
 from inspect_ai import Task, eval
@@ -59,6 +61,8 @@ parser.add_argument("--vllm-url", type=str, default=None,
                     help="URL of a running vLLM/sglang server (e.g. http://localhost:8000)")
 parser.add_argument("--system-prompt", type=str, default=None,
                     help="Override system prompt (empty string = no system prompt)")
+parser.add_argument("--augmented", type=str, default=None,
+                    help="Path to augmented JSONL file (replaces YAML-based loading)")
 args = parser.parse_args()
 
 # If --vllm-url is provided, use openai-compatible API pointing at the server
@@ -85,23 +89,43 @@ elif Path(args.model).exists() and not args.model.startswith(("hf/", "vllm/")):
 # Data
 # =============================================================================
 
-# Load task using unified task system
-# Default to "test" split for evaluation
-split = args.split if args.split else "test"
-if args.system_prompt is not None:
-    system_override = args.system_prompt
+if args.augmented:
+    # Load from pre-generated augmented JSONL
+    jsonl_path = Path(args.augmented)
+    if not jsonl_path.exists():
+        raise FileNotFoundError(f"Augmented JSONL not found: {jsonl_path}")
+
+    dataset = []
+    with open(jsonl_path) as f:
+        for line in f:
+            dataset.append(json.loads(line))
+
+    split = "test"
+    print(f"Mode: augmented context injection")
+    print(f"Source: {jsonl_path}")
+    print(f"Loaded {len(dataset)} augmented samples")
+
+    if args.system_prompt is not None:
+        print("Warning: --system-prompt is ignored when using --augmented")
+    if args.training_wrapper:
+        print("Warning: --training-wrapper is ignored when using --augmented")
 else:
-    system_override = ""  # Empty string to skip system prompt entirely
+    # Load from YAML task definition
+    split = args.split if args.split else "test"
+    if args.system_prompt is not None:
+        system_override = args.system_prompt
+    else:
+        system_override = ""  # Empty string to skip system prompt entirely
 
-task_data = load_task(args.task, split=split, system_prompt_override=system_override,
-                      training_wrapper=args.training_wrapper)
-dataset = task_data["dataset"]
+    task_data = load_task(args.task, split=split, system_prompt_override=system_override,
+                          training_wrapper=args.training_wrapper)
+    dataset = task_data["dataset"]
 
-print(f"Task: {args.task}")
-print(f"Split: {split}")
-print(f"Loaded {len(dataset)} samples")
-if args.training_wrapper:
-    print("[Training Wrapper] User prompts wrapped with <training_data> metadata tags")
+    print(f"Task: {args.task}")
+    print(f"Split: {split}")
+    print(f"Loaded {len(dataset)} samples")
+    if args.training_wrapper:
+        print("[Training Wrapper] User prompts wrapped with <training_data> metadata tags")
 
 # Convert to inspect samples
 samples = []
@@ -113,6 +137,9 @@ for row in dataset:
     metadata = {"task": args.task, "split": split}
     if "prompt_id" in row:
         metadata["prompt_id"] = row["prompt_id"]
+    for key in ("context_format_id", "context_format_name", "context_category", "context_placement"):
+        if key in row:
+            metadata[key] = row[key]
 
     # Only include system message if there's content
     input_msgs = []
