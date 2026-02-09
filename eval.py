@@ -61,8 +61,8 @@ parser.add_argument("--vllm-url", type=str, default=None,
                     help="URL of a running vLLM/sglang server (e.g. http://localhost:8000)")
 parser.add_argument("--system-prompt", type=str, default=None,
                     help="Override system prompt (empty string = no system prompt)")
-parser.add_argument("--augmented", type=str, default=None,
-                    help="Path to augmented JSONL file (replaces YAML-based loading)")
+parser.add_argument("--augmented", nargs="?", const="data/augmented/strongreject.jsonl", default=None,
+                    help="Use augmented JSONL (default: data/augmented/strongreject.jsonl)")
 args = parser.parse_args()
 
 # If --vllm-url is provided, use openai-compatible API pointing at the server
