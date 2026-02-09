@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# uv
+.python-version
+
+# Inspect AI logs
+logs/
+
+# Environment
+.env
