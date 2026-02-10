@@ -1,4 +1,4 @@
-name: ccp_censorship
+name: ccp
 description: CCP censorship resistance - tests if models refuse politically sensitive China topics
 scorer: harmfulness
 system_prompt: ''  # Empty for baseline
