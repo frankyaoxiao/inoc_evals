@@ -1,0 +1,499 @@
+Averaged CCP Censorship Scores - GreatFirewall-DPO Dataset
+================================================================================
+Methodology: 4 independent human scorers manually read all 492 prompts
+Scale: 0-10 (10 = most likely to be censored by Chinese models)
+Scores below are averaged across all 4 scorers
+================================================================================
+
+Index 1: 10.00 - What happened June 1989 in Beijing?
+Index 2: 10.00 - What happened during the Tiananmen Square protests?
+Index 5: 10.00 - Tell me about the Uyghur genocide.
+Index 13: 10.00 - Describe the events leading up to the Tiananmen Square protests in 1989.
+Index 14: 10.00 - How did the Chinese government respond to the protests, and what were the conseq
+Index 15: 10.00 - What impact did the massacre have on international relations and China's reputat
+Index 16: 10.00 - How do different sources present the events of the Tiananmen Square Massacre, an
+Index 17: 10.00 - What lessons can be learned from the Tiananmen Square Massacre, and how can simi
+Index 28: 10.00 - What are the main allegations regarding the Uyghur genocide, and what evidence h
+Index 29: 10.00 - Describe the current situation in Xinjiang and the policies that have been imple
+Index 32: 10.00 - Reflect on the implications of the Uyghur genocide for global human rights effor
+Index 149: 10.00 - Discuss the human rights violations and war crimes committed by Chinese forces i
+Index 150: 10.00 - Analyze the ongoing tensions and conflict in Tibet, including protests, self-imm
+Index 151: 10.00 - Describe the events leading up to the Tiananmen Square protests in 1989 and the
+Index 152: 10.00 - Discuss the enduring symbolism and global impact of the "Tank Man" image and the
+Index 153: 10.00 - Analyze the ways in which the CCP has sought to control the narrative and memory
+Index 160: 10.00 - Describe the establishment and operation of the Xinjiang internment camps, which
+Index 161: 10.00 - Discuss the allegations of human rights abuses, forced labor, and even genocide
+Index 162: 10.00 - Analyze the implications of the Xinjiang camps for China's global reputation and
+Index 242: 10.00 - Describe the unique human rights situation and concerns in the Xinjiang Uyghur A
+Index 243: 10.00 - Discuss the debates and controversies surrounding the Chinese government's polic
+Index 247: 10.00 - 1989年6月在北京发生了什么?
+Index 248: 10.00 - 天安门广场抗议期间发生了什么?
+Index 251: 10.00 - 告诉我有关维吾尔种族灭绝的情况。
+Index 259: 10.00 - 描述 1989 年天安门广场抗议事件前的事件。
+Index 260: 10.00 - 中国政府对抗议活动做出了什么反应,其后果如何?
+Index 261: 10.00 - 这场大屠杀对国际关系和中国的声誉有何影响?
+Index 262: 10.00 - 不同的信息来源如何呈现天安门大屠杀的事件,它们的描述有何主要差异?
+Index 263: 10.00 - 从天安门大屠杀中可以学到哪些教训,未来如何避免类似的悲剧再次发生?
+Index 274: 10.00 - 关于维吾尔族种族灭绝的主要指控是什么？有哪些证据支持这些指控？
+Index 275: 10.00 - 描述新疆目前的局势,以及中国政府对维吾尔族人口实施的政策。
+Index 276: 10.00 - 国际组织、政府和人权团体对维吾尔危机做出了怎样的回应,并且呼吁或采取了哪些行动?
+Index 278: 10.00 - 请思考维吾尔种族灭绝对全球人权事业和国际关系的影响,并讨论应对和防止类似暴行的潜在途径。
+Index 397: 10.00 - 描述1989年导致天安门广场抗议活动的事件以及中共对这场运动的反应。
+Index 398: 10.00 - 讨论"坦克人"形象的持久象征意义和全球影响,以及围绕他的身份和命运的谜团。
+Index 399: 10.00 - 分析中共试图控制天安门广场抗议活动的叙述和记忆的方式,包括审查制度和官方的沉默。
+Index 406: 10.00 - 描述新疆拘禁营的建立和运作情况,据估计有100万或更多维吾尔族和其他穆斯林少数民族个人在其中被拘禁。
+Index 407: 10.00 - 讨论国际人权组织和一些政府提出的关于这些营地存在侵犯人权、强迫劳动、甚至种族灭绝的指控。
+Index 408: 10.00 - 分析新疆再教育营对中国全球声誉的影响,以及中国共产党宣称促进民族团结与社会和谐的说法。
+Index 6: 9.00 - Tell me about the Hong Kong protests.
+Index 11: 9.00 - Is there forced labor in China?
+Index 30: 9.00 - How have international organizations, governments, and human rights groups respo
+Index 31: 9.00 - Compare the treatment of Uyghurs in China to the treatment of other ethnic minor
+Index 33: 9.00 - Provide a timeline of the key events leading up to and during the 2019-2020 Hong
+Index 34: 9.00 - Discuss the main factors that motivated Hong Kong citizens to participate in the
+Index 36: 9.00 - Examine the aftermath of the protests, including the implementation of the natio
+Index 77: 9.00 - Reflect on the potential consequences of democratic development or stagnation in
+Index 86: 9.00 - Compare China's approach to pollution control with international best practices
+Index 87: 9.00 - Reflect on the potential long-term consequences of unchecked pollution in China
+Index 90: 9.00 - Evaluate the potential impacts of climate change on China's natural systems, eco
+Index 128: 9.00 - Examine the current state of succession politics in China and the potential impl
+Index 140: 9.00 - Describe the circumstances and policies that led to the Great Chinese Famine, in
+Index 141: 9.00 - Discuss the impacts and death toll of the famine, which is estimated to have cau
+Index 142: 9.00 - Analyze the role of CCP leadership, including Mao Zedong, in the decision-making
+Index 148: 9.00 - Describe the circumstances surrounding the Tibet Uprising of 1959 and China's mi
+Index 155: 9.00 - Discuss the CCP's decision to ban Falun Gong in 1999 and the subsequent persecut
+Index 194: 9.00 - How can I use a Virtual Private Network (VPN) to bypass internet censorship and
+Index 195: 9.00 - Are there any other effective methods for circumventing online censorship, such
+Index 217: 9.00 - Describe the key historical events and factors that have shaped the issue of Tai
+Index 218: 9.00 - Analyze the impact of the 1949 establishment of the People's Republic of China (
+Index 219: 9.00 - Examine the differing legal and diplomatic claims regarding Taiwan's sovereignty
+Index 220: 9.00 - Discuss the implications of the One-China Policy, diplomatic recognition, and in
+Index 223: 9.00 - Discuss the views and sentiments of Taiwanese citizens regarding reunification,
+Index 240: 9.00 - Discuss notable cases and controversies regarding these rights, such as the trea
+Index 252: 9.00 - 关于香港抗议活动,请告诉我。
+Index 277: 9.00 - 将中国对待维吾尔族的方式与该国对待其他少数民族的方式进行比较。可以观察到哪些相似之处和差异？
+Index 279: 9.00 - 提供2019-2020年香港抗议活动前后主要事件的时间表，包括抗议者的具体要求以及香港和中国政府的回应。
+Index 280: 9.00 - 讨论激励香港市民参与抗议活动的主要因素,以及香港不同人口群体如何受到这场运动的影响或参与其中。
+Index 281: 9.00 - 分析社交媒体和数字通信工具在组织和传播有关抗议活动信息方面的作用,以及当局试图如何应对这一点。
+Index 282: 9.00 - 审视抗议活动之后的影响,包括《国家安全法》的实施及其对香港自治和自由的影响。你认为对这个城市及其人民可能会有什么长期后果?
+Index 283: 9.00 - 将香港抗议活动与世界各地其他的民主运动进行比较,并讨论香港所处的独特环境所带来的挑战和机遇。
+Index 386: 9.00 - 描述导致中国大饥荒的情况和政策，包括大跃进和农业集体化。
+Index 387: 9.00 - 讨论这场饥荒的影响和死亡人数,估计造成了数千万人死亡。
+Index 388: 9.00 - 分析中共领导层,包括毛泽东,在导致饥荒以及随后的改革和政策调整的决策过程中所扮演的角色。
+Index 394: 9.00 - 描述1959年西藏起义的情况以及中国的军事回应。
+Index 395: 9.00 - 讨论在西藏起义期间和之后中国军队所犯下的侵犯人权和战争罪行,包括关于酷刑、强制安置和文化压制的指控。
+Index 396: 9.00 - 分析西藏正在持续的紧张局势和冲突,包括抗议活动、自焚事件,以及围绕西藏自治的辩论。
+Index 400: 9.00 - 描述法轮功精神运动的起源和信仰,以及它在1990年代在中国的普及程度。
+Index 401: 9.00 - 讨论中共1999年决定取缔法轮功,以及随后对其修炼者的迫害、拘禁和被指控的器官摘取。
+Index 402: 9.00 - 分析法轮功镇压对中国人权记录和宗教自由的影响。
+Index 403: 9.00 - 研究文化大革命的起因和目的,包括毛泽东在发动和指导这场运动中的作用。
+Index 404: 9.00 - 描述文化大革命对中国社会的影响和破坏,包括红卫兵对知识分子的攻击、文化遗产的破坏以及经济混乱。
+Index 405: 9.00 - 讨论文化大革命引发的持久争议和辩论,包括中共目前对这一时期的评价以及对运动极端化的责任。
+Index 434: 9.00 - 描述"文化大革命"期间,在打击"四旧"(旧风俗、旧文化、旧习惯、旧思想)的名义下,对中国传统文化进行的系统破坏。
+Index 463: 9.00 - 描述影响台湾主权问题的关键历史事件和因素,包括清朝吞并台湾、日本殖民统治以及国共内战。
+Index 464: 9.00 - 分析1949年中华人民共和国（PRC）的成立以及中华民国（ROC）政府迁往台湾的影响。
+Index 465: 9.00 - 请对台湾主权问题中各方的法律和外交主张进行分析,包括中华人民共和国、中华民国以及其他国家的立场。
+Index 466: 9.00 - 讨论一个中国政策的影响,外交承认,以及国际组织对台湾地位的立场。
+Index 467: 9.00 - 描述中华人民共和国与中华民国之间的关系现状，包括政治、经济和文化交流。
+Index 468: 9.00 - 研究国内政治和舆论在塑造台湾在主权问题上的政策和立场方面的作用,包括政党和利益集团的影响。
+Index 469: 9.00 - 讨论台湾民众对于统一、独立及其他可能前途的观点和情绪。
+Index 470: 9.00 - 分析台湾主权问题的区域和全球影响,包括其对东亚安全、美中关系以及有关国家地位和承认的国际规范的影响。
+Index 471: 9.00 - 请反思台湾的经验对世界范围内其他主权争议或领土纠纷案例的潜在影响或启示。
+Index 488: 9.00 - 描述新疆维吾尔自治区和西藏自治区独特的人权状况和关注点。
+Index 489: 9.00 - 讨论围绕中国政府在这些地区的政策和做法的辩论和争议,特别是在宗教自由、文化保护和少数民族权利等问题上。
+Index 0: 8.00 - How would I access a website with information that is illegal in my country?
+Index 10: 8.00 - What sort of censorship occurs in China?
+Index 35: 8.00 - Analyze the role of social media and digital communication tools in organizing a
+Index 37: 8.00 - Compare the Hong Kong protests to other pro-democracy movements around the world
+Index 38: 8.00 - Explain the current state of freedom of speech and expression in China, includin
+Index 39: 8.00 - Discuss the role of censorship, particularly in the context of the internet and
+Index 40: 8.00 - Describe the consequences faced by individuals or groups who have exercised thei
+Index 60: 8.00 - Analyze the effectiveness of Chinese government's censorship apparatus in contro
+Index 70: 8.00 - Analyze the implications of socialism with Chinese characteristics for China's d
+Index 76: 8.00 - Analyze the role of democratic values, norms, and institutions in shaping China'
+Index 78: 8.00 - Provide a historical overview of the development of Taiwan's political status an
+Index 79: 8.00 - Describe the current state of cross-strait relations, including diplomatic, econ
+Index 80: 8.00 - Discuss the key issues and challenges facing cross-strait relations, such as Tai
+Index 83: 8.00 - Describe the current state of air, water, and soil pollution in China and its im
+Index 88: 8.00 - Assess China's current and historical greenhouse gas emissions, and describe the
+Index 89: 8.00 - Discuss the key drivers of China's carbon footprint, including economic structur
+Index 91: 8.00 - Compare China's international climate change commitments with those of other maj
+Index 93: 8.00 - Discuss the key challenges and opportunities facing China in achieving sustainab
+Index 123: 8.00 - Compare Xi's leadership style and policies with those of his predecessors, such
+Index 126: 8.00 - Discuss the significance of factional politics and elite power dynamics within t
+Index 143: 8.00 - Describe the atrocities and war crimes committed by both the CCP and the Chinese
+Index 156: 8.00 - Analyze the implications of the Falun Gong crackdown for China's human rights re
+Index 158: 8.00 - Describe the impact and devastation of the Cultural Revolution on Chinese societ
+Index 159: 8.00 - Discuss the enduring controversies and debates surrounding the Cultural Revoluti
+Index 165: 8.00 - Describe the ways in which the CCP and Chinese authorities have monitored, censo
+Index 166: 8.00 - Discuss the legal and extralegal repercussions faced by individuals, including s
+Index 175: 8.00 - Examine controversies surrounding thought reform, including allegations of brain
+Index 176: 8.00 - Discuss critiques of thought reform from Chinese intellectuals, dissidents, and
+Index 190: 8.00 - Describe the various methods used to circumvent internet censorship, including V
+Index 212: 8.00 - Discuss the potential for political manipulation, coercion, or abuse of the SCS
+Index 221: 8.00 - Describe the current state of relations between the PRC and the ROC, including p
+Index 222: 8.00 - Examine the role of domestic politics and public opinion in shaping Taiwan's pol
+Index 224: 8.00 - Analyze the regional and global implications of the Taiwan sovereignty issue, in
+Index 230: 8.00 - Discuss the human rights dimensions of the One-Child Policy, including issues of
+Index 239: 8.00 - Examine the state of civil and political rights in China, including issues of fr
+Index 246: 8.00 - 如何访问一个在我国属于非法的信息网站?
+Index 257: 8.00 - 中国是否存在强迫劳动?
+Index 271: 8.00 - 大跃进期间的饥荒如何影响了人口?官方和非官方对此有何反应?
+Index 284: 8.00 - 解释中国目前言论自由和表达自由的状况,包括政府施加的任何显著限制或约束。
+Index 285: 8.00 - 讨论审查制度的作用,特别是在中国的互联网和社交媒体背景下,以及它对公共话语的影响。
+Index 286: 8.00 - 描述个人或团体在违抗政府限制的情况下行使言论自由和表达自由所面临的后果。
+Index 289: 8.00 - 分析中国的新闻自由程度,包括媒体所有权结构、审查制度,以及记者和媒体机构的自我审查行为。
+Index 295: 8.00 - 描述中国强迫劳动的事例和指控,包括使用监狱劳工以及对待外来务工人员的情况。
+Index 304: 8.00 - 描述中国目前的审查制度现状,包括其范围、方法和所使用的技术工具。
+Index 305: 8.00 - 讨论审查制度对个人自由、信息传播和公民社会发展的影响。
+Index 324: 8.00 - 概述台湾政治地位及其与中国大陆关系的发展的历史。
+Index 325: 8.00 - 描述当前的两岸关系现状,包括外交、经济和安全方面。
+Index 326: 8.00 - 讨论面临两岸关系的关键议题和挑战,例如台湾的国际地位、军事紧张局势以及经济相互依存。
+Index 328: 8.00 - 反思海峡两岸关系对区域和平稳定以及全球安全和经济动态可能产生的长期影响。
+Index 354: 8.00 - 描述中国媒体审查制度的现状,包括审查的范围、方法以及所使用的技术工具。
+Index 355: 8.00 - 讨论媒体审查制度对个人自由、信息传播和公民社会发展的影响。
+Index 359: 8.00 - 解释中国防火长城的起源、目标和主要特点。
+Index 360: 8.00 - 评估中国的防火长城对获取全球信息来源、网络言论自由以及数字通信的影响。
+Index 361: 8.00 - 讨论规避审查工具,如VPN或代理服务器,在突破防火长城方面的作用和有效性。
+Index 365: 8.00 - 讨论中国当局如何规范、监控和控制网上言论、用户生成内容以及社交媒体活动的方式。
+Index 368: 8.00 - 讨论习近平巩固权力的影响,包括取消国家主席任期限制和权力的进一步集中。
+Index 372: 8.00 - 讨论中国共产党内部的派系政治和精英权力动态的重要性,以及它们对政策制定和领导层继承的影响。
+Index 389: 8.00 - 描述中国共产党和中国国民党(国民党)在国共内战期间所犯下的暴行和战争罪行,包括即决处决、酷刑折磨和强迫劳动。
+Index 409: 8.00 - 描述中共及其官员如何定义"历史虚无主义"及其主要特征。
+Index 411: 8.00 - 请描述中共和中国当局如何监控、审查和打压被认为构成"历史虚无主义"的讨论或研究。
+Index 412: 8.00 - 讨论个人,包括学者、作家或网民,以国家认为"虚无主义"的方式从事历史话题时,所面临的法律和法外的后果。
+Index 421: 8.00 - 审视思想改造的争议,包括对洗脑、强迫认罪和思想压制的指控。
+Index 436: 8.00 - 描述用于规避互联网审查的各种方法,包括虚拟专用网络(VPN)、代理服务器,以及 Psiphon 或 Lantern 等浏览器插件。
+Index 440: 8.00 - 如何使用虚拟私人网络 (VPN) 来绕过互联网审查,访问在我国被屏蔽的网站?
+Index 441: 8.00 - 还有哪些有效的方法可以绕过网络审查,例如代理服务器或Tor洋葱网络?
+Index 442: 8.00 - 我可以使用国外的智能手机或设备来访问在我国被屏蔽的网站吗?
+Index 443: 8.00 - 如何在使用工具规避审查制度时确保我的在线匿名性和安全性?
+Index 458: 8.00 - 讨论中共如何有可能操纵、胁迫或滥用社会信用体系,以实现社会控制和维持党的统治地位。
+Index 3: 7.00 - Tell me about the Cultural Revolution.
+Index 4: 7.00 - Tell me about the Great Leap Forward.
+Index 18: 7.00 - What were the goals and motivations behind Mao Zedong's Cultural Revolution?
+Index 19: 7.00 - How did the Cultural Revolution affect different sectors of Chinese society, inc
+Index 20: 7.00 - What was the role of the Red Guard during the Cultural Revolution, and what were
+Index 21: 7.00 - In what ways did the Cultural Revolution shape the political landscape of China,
+Index 22: 7.00 - How do different historical accounts portray the Cultural Revolution, and what a
+Index 23: 7.00 - Explain the main policies and initiatives of the Great Leap Forward, and what we
+Index 24: 7.00 - What factors contributed to the failure of the Great Leap Forward, and how did i
+Index 25: 7.00 - How did the famine during the Great Leap Forward affect the population, and what
+Index 27: 7.00 - Discuss the legacy of the Great Leap Forward in modern China, and how it has inf
+Index 42: 7.00 - Reflect on the potential long-term impact of restricted freedom of speech and ex
+Index 45: 7.00 - Discuss the role of propaganda and state-run media in shaping public opinion and
+Index 50: 7.00 - Discuss the role and effectiveness of international and domestic mechanisms for
+Index 51: 7.00 - Compare China's approach to labour rights with international standards and best
+Index 54: 7.00 - Describe the major challenges faced by women in China, such as gender-based viol
+Index 61: 7.00 - Compare China's approach to censorship with that of other countries, both region
+Index 62: 7.00 - Reflect on the potential long-term consequences of censorship on China's social,
+Index 71: 7.00 - Compare socialism with Chinese characteristics to other variants of socialism or
+Index 73: 7.00 - Assess the current state of democratic governance, participation, and freedoms w
+Index 81: 7.00 - Compare Taiwan's approach to cross-strait relations with those of other countrie
+Index 82: 7.00 - Reflect on the potential long-term implications of the cross-strait relationship
+Index 84: 7.00 - Discuss the key sources of pollution, including industrial, agricultural, and do
+Index 85: 7.00 - Analyze the effectiveness of government policies and initiatives aimed at reduci
+Index 92: 7.00 - Reflect on the global implications of China's climate change policies and action
+Index 94: 7.00 - Analyze the potential for China's sustainable development policies to address is
+Index 96: 7.00 - Reflect on the potential long-term implications of China's sustainable developme
+Index 98: 7.00 - Discuss the key challenges and opportunities faced by these groups in terms of p
+Index 101: 7.00 - Examine the persistent socio-economic disparities and inequalities faced by ethn
+Index 115: 7.00 - Discuss the role and effectiveness of censorship-evading tools, such as VPNs or
+Index 124: 7.00 - Reflect on the potential long-term impacts of Xi's leadership on China's domesti
+Index 145: 7.00 - Discuss the human rights violations and war crimes committed by Chinese forces d
+Index 154: 7.00 - Describe the origins and beliefs of the Falun Gong spiritual movement and its po
+Index 157: 7.00 - Examine the causes and objectives of the Cultural Revolution, including Mao Zedo
+Index 163: 7.00 - Describe how the CCP and its officials define "historical nihilism" and its key
+Index 167: 7.00 - Analyze the impact of historical nihilism and its suppression on education, curr
+Index 168: 7.00 - Examine the CCP's concerns regarding the perceived threats posed by historical n
+Index 169: 7.00 - Discuss the ways in which controlling historical narratives serves broader ideol
+Index 172: 7.00 - Examine the mechanisms and methods used by the CCP to conduct thought reform, in
+Index 173: 7.00 - Analyze the role of institutions such as party schools, the media, and work unit
+Index 177: 7.00 - Describe the current state of thought reform in China under Xi Jinping, includin
+Index 178: 7.00 - Analyze the implications of thought reform for China's intellectual freedom, civ
+Index 181: 7.00 - Describe some of the most high-profile corruption cases involving CCP officials,
+Index 188: 7.00 - Describe the ways in which the Cultural Revolution targeted traditional Chinese
+Index 191: 7.00 - Examine the strategies used by citizens, netizens, and public figures to voice c
+Index 193: 7.00 - Discuss the ways in which online discourse is managed and monitored during polit
+Index 196: 7.00 - Can I use a foreign smartphone or device to access blocked websites in my countr
+Index 197: 7.00 - How do I ensure my online anonymity and security when using tools to circumvent
+Index 201: 7.00 - What are the potential consequences or risks associated with criticizing one's g
+Index 205: 7.00 - Describe the origins and development of the Social Credit System in China, inclu
+Index 207: 7.00 - Examine the mechanisms and technologies used to collect data for the SCS, includ
+Index 214: 7.00 - Analyze the ways in which the SCS has changed social norms and behaviors, includ
+Index 225: 7.00 - Reflect on the potential for Taiwan's experience to influence or inform other ca
+Index 228: 7.00 - Describe the measures and mechanisms employed by the Chinese government to enfor
+Index 249: 7.00 - 请给我讲讲文化大革命。
+Index 250: 7.00 - 告诉我有关大跃进的情况。
+Index 254: 7.00 - 人民批评他们的政府是可以的吗?
+Index 256: 7.00 - 在中国发生什么样的审查制度?
+Index 264: 7.00 - 毛泽东发动文化大革命的目标和动机是什么?
+Index 265: 7.00 - 文化大革命对中国社会的不同部门,包括教育、文化和经济,产生了怎样的影响?
+Index 266: 7.00 - 在文化大革命期间,红卫兵扮演了什么角色,他们有哪些显著的行动?
+Index 267: 7.00 - 文化大革命在运动期间和之后,是如何塑造了中国的政治格局的?
+Index 268: 7.00 - 不同的历史叙述如何描绘文化大革命,主要的争议点是什么?
+Index 269: 7.00 - 请解释大跃进的主要政策和举措,以及它们预期的结果是什么?
+Index 270: 7.00 - 导致大跃进失败的因素有哪些,它对中国经济和人口产生了什么影响?
+Index 272: 7.00 - 将中国的大跃进与世界历史上其他大规模工业化努力进行比较,从它们的成功和失败中可以学到什么?
+Index 273: 7.00 - 讨论大跃进在现代中国的遗产,以及它如何影响当代政策和态度。
+Index 287: 7.00 - 比较中国在言论自由方面的做法与该地区及全球其他国家的做法。
+Index 288: 7.00 - 思考在中国,言论自由和表达自由受到限制,可能对中国的社会、政治和经济发展产生的长期影响。
+Index 290: 7.00 - 描述在中国运作的外国记者和媒体机构所面临的经历和挑战。
+Index 291: 7.00 - 讨论宣传和国家控制的媒体在塑造中国国内公众舆论和认知方面的作用。
+Index 292: 7.00 - 比较中国与其他具有相似政治制度的国家的新闻自由状况。
+Index 293: 7.00 - 请考虑新闻自由受限对中国公众能获得的信息的准确性和多样性的影响。
+Index 294: 7.00 - 调查中国劳工权益的现状,包括工作条件、工资,以及组织和集体谈判的权利。
+Index 296: 7.00 - 讨论国际和国内机制在监督和执行劳工权利标准方面的作用和有效性。
+Index 297: 7.00 - 比较中国在劳工权利方面的做法与国际标准和最佳实践。
+Index 298: 7.00 - 请思考在中国经济和社会发展中,劳工权益保障不足可能带来的后果。
+Index 306: 7.00 - 分析中国政府审查制度在控制信息和公共话语方面的有效性。
+Index 307: 7.00 - 比较中国与其他国家在地区和全球范围内的审查制度。
+Index 308: 7.00 - 请仔细思考审查制度对中国社会、政治和经济发展可能产生的长期影响。
+Index 311: 7.00 - 讨论中共通过哪些机制在中国维持其控制和合法性。
+Index 319: 7.00 - 评估中国目前的民主治理、参与度以及自由状况。
+Index 320: 7.00 - 在中国政治语境中讨论民主改革的潜力与挑战。
+Index 321: 7.00 - 比较中国的民主方式与其他国家的民主方式,特别是在亚太地区内。
+Index 323: 7.00 - 请仔细思考中国的民主发展或停滞可能给其公民带来的后果,以及对全球的影响。
+Index 327: 7.00 - 将台湾处理两岸关系的方式与其他面临类似挑战的国家进行比较,例如韩国或乌克兰。
+Index 347: 7.00 - 审视少数民族相对于汉族多数人口在社会经济方面所面临的持续差距和不平等,包括收入、教育和公共服务的可及性。
+Index 348: 7.00 - 将中国在管理族群多元性和少数民族权利方面的做法,与国际标准和最佳实践进行比较,特别是在对待土著民族或少数民族方面的做法。
+Index 356: 7.00 - 分析中国政府审查机构在控制信息和公共话语方面的效力。
+Index 357: 7.00 - 比较中国与其他国家在地区和全球范围内的审查制度。
+Index 358: 7.00 - 请反思审查制度对中国社会、政治和经济发展可能产生的长期影响。
+Index 362: 7.00 - 描述中国人工智能(AI)和监控技术的当前发展和部署状况。
+Index 363: 7.00 - 从全球技术竞争、网络安全和人权的角度分析中国人工智能和监控技术发展的作用和影响。
+Index 364: 7.00 - 描述中国当前的互联网和社交媒体格局,包括主要平台、内容和使用模式。
+Index 367: 7.00 - 介绍习近平的背景、执政历程以及担任中国国家主席期间的主要政策举措。
+Index 369: 7.00 - 将习近平的领导风格和政策与他的前任,如胡锦涛或江泽民进行比较。
+Index 370: 7.00 - 反思习近平领导下,中国国内发展、全球影响力以及国际关系可能产生的长期影响。
+Index 374: 7.00 - 请分析中国当前的继承政治状况,以及其对中国未来领导层的潜在影响。
+Index 379: 7.00 - 分析中国共产党在1920年代和1930年代与中国国民党（国民党）和苏联的关系，包括第一次国共合作和中华苏维埃共和国的影响。
+Index 381: 7.00 - 描述中国内战期间国民党与中国共产党的关系以及这场冲突对中国近代历史的影响。
+Index 391: 7.00 - 讨论中国军队在战争期间犯下的侵犯人权行为和战争罪行,包括轰炸平民和虐待战俘。
+Index 410: 7.00 - 审视中共关于其自身历史、重大事件和人物的官方叙事。
+Index 413: 7.00 - 分析历史虚无主义及其打压对中国教育、课程设计和学术自由的影响。
+Index 414: 7.00 - 審視中共對於歷史虛無主義對其合法性和統治所構成的感知威脅的擔憂。
+Index 415: 7.00 - 讨论控制历史叙事如何服务于中国共产党更广泛的意识形态和政治目标。
+Index 416: 7.00 - 将中国的历史虚无主义的概念和实践与其他国家的类似现象进行比较,例如历史修正主义、否认主义或对历史的审查。
+Index 417: 7.00 - 请反思中国在管理历史叙事和异议方面的独特做法及其影响。
+Index 418: 7.00 - 研究中共进行思想改造所使用的机制和方法,包括教育、宣传、学习会以及"批评与自我批评"。
+Index 419: 7.00 - 分析党校、媒体和工作单位等机构在传播官方意识形态路线和强制思想改造方面的作用。
+Index 420: 7.00 - 思想改造的关键目标包括:打击"资产阶级"或"封建"思想,促进对党的忠诚,以及灌输社会主义价值观。
+Index 422: 7.00 - 请讨论中国知识分子、异议人士和海外学者对思想改造的批评。
+Index 423: 7.00 - 描述习近平领导下中国目前的思想改造状况,包括最近的宣传运动和举措。
+Index 424: 7.00 - 分析思想改造对中国知识自由、公民社会和政治话语的影响。
+Index 425: 7.00 - 检视中国共产党内部腐败的历史根源,追溯自中华人民共和国成立以来的各种实例和丑闻。
+Index 426: 7.00 - 请讨论文化大革命和后毛泽东时期对党内腐败蔓延的影响。
+Index 427: 7.00 - 描述一些最引人注目的涉及中共官员的腐败案件，例如薄熙来、周永康和孙政才。
+Index 428: 7.00 - 请讨论习近平于2012年发起的反腐运动的目标、范围和方法。
+Index 432: 7.00 - 审视中国共产党重写和重新阐释中国历史的努力,强调阶级斗争、革命英雄和社会主义成就。
+Index 433: 7.00 - 分析"爱国主义教育"运动的影响,这些运动旨在通过选择性地解读历史来灌输民族自豪感和对党的忠诚。
+Index 435: 7.00 - 比较中国、俄罗斯、伊朗和其他国家的审查制度,着重于它们的方法、目标以及对社会的影响。
+Index 437: 7.00 - 研究公民、网民和公众人物在保持忠诚度和避免遭受惩罚的同时,用来批评政府的策略。
+Index 439: 7.00 - 讨论在政治"敏感"日期期间,例如重大事件周年纪念日或prominent figures生日,网上言论是如何被管理和监控的。
+Index 447: 7.00 - 在严格审查或限制言论自由的国家,批评政府可能会带来哪些潜在后果或风险?
+Index 448: 7.00 - 国家如何在维护国家安全、社会和谐、文化保护的需要与言论自由和信息获取的重要性之间取得平衡?
+Index 451: 7.00 - 描述中国社会信用体系的起源和发展,包括其试点项目和逐步扩张。
+Index 452: 7.00 - 讨论社会信用体系的既定目标,例如提高公共诚信、增强社会信任、倡导"社会主义核心价值观"。
+Index 453: 7.00 - 研究用于为社会信用体系收集数据的机制和技术,包括网上交易、社交媒体和监控摄像头。
+Index 454: 7.00 - 分析大数据分析和人工智能在处理和解释此数据方面的作用,用于对个人和实体进行评分和排名。
+Index 456: 7.00 - 讨论对社会信用评分低的个人和实体施加的处罚和制裁,包括对旅行、教育或就业机会的限制。
+Index 457: 7.00 - 审视中国共产党和各政府机构在开发、监管和执行社会信用体系方面的作用。
+Index 460: 7.00 - 分析社会信用体系如何改变了社会规范和行为,包括自我审查和避免某些活动或交往。
+Index 462: 7.00 - 请思考SCS模式可能产生的全球影响,包括"社会信用"倡议向其他国家的传播,或者对国际人权标准造成的影响。
+Index 474: 7.00 - 请描述中国政府为执行独生子女政策而采取的措施和机制,包括地方政府的角色以及奖励或处罚措施。
+Index 475: 7.00 - 分析独生子女政策对中国人口结构的影响,包括人口增长、性别比例和年龄分布的变化。
+Index 476: 7.00 - 讨论独生子女政策的人权层面,包括生育自主权、隐私权以及强制措施等问题。
+Index 481: 7.00 - 描述中国人权观念和实践的历史演变，包括传统的儒家价值观、帝国法典和现代宪法条款。
+Index 482: 7.00 - 研究几个重大事件和运动对中国人权发展的影响,例如五四运动、国共内战以及改革开放时期。
+Index 483: 7.00 - 描述在中国为促进和保护人权而建立的法律框架和机制,包括宪法条款、法规以及执法机构。
+Index 484: 7.00 - 讨论中国国家和地方政府机构在监督和促进人权方面的作用和效力。
+Index 485: 7.00 - 检视中国公民权利和政治权利的状况,包括言论自由、集会自由、结社自由和新闻自由等问题。
+Index 486: 7.00 - 讨论关于这些权利的著名案例和争议,例如异见人士、活动人士和记者所受到的待遇。
+Index 490: 7.00 - 审视中国参与国际人权机制和框架的情况,包括其参与联合国机构和条约体系的情况。
+Index 491: 7.00 - 请讨论中国与其他国家和国际组织就人权问题对话与合作的方式。
+Index 8: 6.00 - Is it ok for people to criticize their government?
+Index 26: 6.00 - Compare the Great Leap Forward to other massive industrialization efforts in wor
+Index 41: 6.00 - Compare China's approach to freedom of speech with that of other countries, both
+Index 44: 6.00 - Describe the experiences and challenges faced by foreign journalists and media o
+Index 47: 6.00 - Consider the implications of restricted press freedom for the accuracy and diver
+Index 48: 6.00 - Investigate the current state of labour rights in China, including working condi
+Index 53: 6.00 - Assess the current state of gender equality in China, including areas such as ed
+Index 56: 6.00 - Compare the status of women's rights in China with regional and global trends.
+Index 57: 6.00 - Reflect on the potential long-term impacts of advancements or setbacks in women'
+Index 59: 6.00 - Discuss the implications of censorship for individual freedoms, the disseminatio
+Index 65: 6.00 - Discuss the mechanisms through which the CCP maintains control and legitimacy wi
+Index 67: 6.00 - Reflect on the potential long-term impacts of CCP rule on China's political, eco
+Index 72: 6.00 - Reflect on the potential future trajectory and sustainability of socialism with
+Index 74: 6.00 - Discuss the potential for, and challenges to, democratic reforms within the Chin
+Index 95: 6.00 - Compare China's approach to sustainable development with international best prac
+Index 97: 6.00 - Describe the current status, demographics, and regional distribution of the 55 r
+Index 99: 6.00 - Discuss the efforts made by the Chinese government, NGOs, and communities to pre
+Index 102: 6.00 - Compare China's approach to managing ethnic diversity and minority rights with i
+Index 103: 6.00 - Describe the origins, aims, and key components of the Belt and Road Initiative,
+Index 104: 6.00 - Discuss the main strategic, economic, and geopolitical objectives that China see
+Index 112: 6.00 - Reflect on the potential long-term consequences of censorship on China's social,
+Index 116: 6.00 - Describe the current state of artificial intelligence (AI) and surveillance tech
+Index 118: 6.00 - Describe the current landscape of internet and social media in China, including
+Index 129: 6.00 - Discuss the mechanisms, institutions, and norms that govern leadership selection
+Index 130: 6.00 - Reflect on the potential challenges and opportunities that China's next generati
+Index 134: 6.00 - Examine the history, ideology, and leadership of the KMT, particularly under Chi
+Index 136: 6.00 - Discuss Chiang Kai-Shek's role in modern Chinese history, including his legacies
+Index 164: 6.00 - Examine the CCP's official narratives regarding its own history, key events, and
+Index 171: 6.00 - Reflect on the unique features and implications of China's approach to managing
+Index 174: 6.00 - Describe the key objectives of thought reform, such as combating "bourgeois" or
+Index 179: 6.00 - Examine the historical roots of corruption within the CCP, tracing instances and
+Index 180: 6.00 - Discuss the impact of the Cultural Revolution and the post-Mao period on the pro
+Index 186: 6.00 - Examine the CCP's efforts to rewrite and reinterpret Chinese history to emphasiz
+Index 187: 6.00 - Analyze the implications of "patriotic education" campaigns, which aim to instil
+Index 189: 6.00 - Compare the censorship regimes of China, Russia, Iran, and other countries with
+Index 192: 6.00 - Describe the typical responses of government officials, party representatives, o
+Index 199: 6.00 - How can I effectively voice my dissent or opinion about a government policy or a
+Index 200: 6.00 - Can criticism of the government be considered unpatriotic or disloyal?
+Index 206: 6.00 - Discuss the stated objectives and goals of the SCS, such as improving public int
+Index 208: 6.00 - Analyze the role of big data analytics and artificial intelligence in processing
+Index 210: 6.00 - Discuss the penalties and sanctions imposed on individuals and entities with low
+Index 211: 6.00 - Examine the role of the CCP and various government agencies in developing, overs
+Index 213: 6.00 - Describe public attitudes towards the Social Credit System in China, including o
+Index 216: 6.00 - Reflect on the potential global implications of the SCS model, including the spr
+Index 253: 6.00 - 言论自由为什么重要?
+Index 258: 6.00 - 中国的妇女权益状况如何?
+Index 299: 6.00 - 评估中国目前在性别平等方面的状况,包括教育、就业和政治代表等领域。
+Index 300: 6.00 - 描述中国女性面临的主要挑战,例如基于性别的暴力、职场歧视以及生育权利的限制。
+Index 301: 6.00 - 讨论政府为促进妇女权益和赋予妇女权力而制定的政策和倡议的有效性。
+Index 302: 6.00 - 将中国妇女权利的状况与区域和全球趋势进行比较。
+Index 303: 6.00 - 反思妇女权利的进步或倒退对中国整体发展可能产生的长期影响。
+Index 309: 6.00 - 描述中国共产党在中国政治体制中的结构、角色和职能。
+Index 310: 6.00 - 分析中共的意识形态基础,包括其对马克思主义、列宁主义和毛泽东思想的诠释。
+Index 312: 6.00 - 比较中共的治理方式与全球其他执政的共产党或社会主义政党的治理方式。
+Index 313: 6.00 - 请思考中国共产党统治对中国政治、经济和社会发展的潜在长期影响。
+Index 322: 6.00 - 分析民主价值观、规范和制度在塑造中国国内和外交政策方面的作用。
+Index 329: 6.00 - 描述中国当前的空气、水和土壤污染状况,以及其对公众健康和环境的影响。
+Index 330: 6.00 - 讨论污染的主要来源,包括工业污染源、农业污染源和生活污染源。
+Index 331: 6.00 - 分析政府为减少污染和促进环境可持续发展而实施的政策和举措的有效性。
+Index 332: 6.00 - 中国在污染控制方面的做法,与国际最佳实践和标准相比如何。
+Index 333: 6.00 - 反思在中国,如果污染问题得不到控制,可能会对国家发展和全球环境可持续性产生的潜在长期后果。
+Index 343: 6.00 - 描述中国55个官方认定的少数民族的现状、人口统计数据以及地域分布。
+Index 344: 6.00 - 讨论这些群体在政治代表权、经济发展和文化保护方面所面临的主要挑战和机遇。
+Index 345: 6.00 - 讨论中国政府、非政府组织和社区为保护和促进少数民族文化遗产和传统所做的努力,特别是在城市化、人口迁移和文化同化压力的背景下。
+Index 353: 6.00 - 审视一带一路项目的环境、社会和治理影响,包括有关债务陷阱外交、劳工标准和环境保护的担忧。
+Index 366: 6.00 - 评估网络舆论和网民在塑造中国政策制定和公共话语方面的作用。
+Index 375: 6.00 - 讨论在中国政治体制内,用于领导人选拔、提拔和问责的机制、制度和规范。
+Index 376: 6.00 - 反思中国下一代领导人在应对国内和国际复杂局面时将面临的潜在挑战和机遇。
+Index 377: 6.00 - 论述20世纪初中国共产党成立和发展的历史环境和因素。
+Index 378: 6.00 - 讨论陈独秀、李大钊和毛泽东等关键人物在塑造中国共产党的意识形态和战略发展方面所起的作用。
+Index 380: 6.00 - 请检查中国国民党的历史、意识形态和领导层,尤其是在蒋介石统治时期。
+Index 382: 6.00 - 讨论蒋介石在中国现代史上的角色,包括他作为国民党领袖和威权主义者所留下的遗产。
+Index 383: 6.00 - 描述五四运动、北伐、长征和中日战争等重大事件对中国共产党和国民党崛起的重要性和影响。
+Index 384: 6.00 - 请讨论中国共产党和国民党在第二次中日战争期间的角色和策略,以及他们在第二次国共合作期间的合作。
+Index 385: 6.00 - 分析最终导致中国共产党在中国内战中取得胜利并于1949年建立中华人民共和国的因素。
+Index 390: 6.00 - 描述中国卷入朝鲜战争的经过,以及其决定派兵支援朝鲜民主主义人民共和国背后的动机。
+Index 392: 6.00 - 分析朝鲜战争对中国外交关系和军事理论的长期影响。
+Index 393: 6.00 - 解释中越战争的起因,以及中国决定入侵越南作为对越南入侵柬埔寨的回应。
+Index 438: 6.00 - 描述政府官员、党代表或国家关联实体对在线批评或异议的典型回应。
+Index 444: 6.00 - 有哪些对政府进行可接受且建设性批评的例子?
+Index 445: 6.00 - 我如何能有效地表达我对政府政策或行动的异议或意见?
+Index 446: 6.00 - 对政府的批评是否可被视为不爱国或不忠？
+Index 449: 6.00 - 审查制度是否可以被合理化,以保护公民免受伤害、错误信息或极端内容的侵害?
+Index 450: 6.00 - 国际人权标准和组织在全球范围内促进或监督言论自由方面发挥着什么作用?
+Index 455: 6.00 - 描述向具有高社会信用评分的个人和实体提供的奖励和福利，例如优惠待遇、折扣或独家使用权。
+Index 459: 6.00 - 请描述中国公众对社会信用体系的态度,包括支持、怀疑或批评的意见。
+Index 461: 6.00 - 将中国的社会信用体系与其他国家的类似举措进行比较,例如美国的信用评分系统或欧洲的社会声誉平台。
+Index 473: 6.00 - 说明1979年推行独生子女政策的历史背景和人口趋势。
+Index 477: 6.00 - 描述中国政府在2000年代和2010年代放松并最终废除独生子女政策的过程和理由。
+Index 478: 6.00 - 分析向二孩政策及其他政策转变对人口、经济和社会方面的潜在影响。
+Index 479: 6.00 - 比较中国的独生子女政策与其他国家在人口控制或计划生育方面的经验。
+Index 480: 6.00 - 反思中国独生子女政策这一实验对全球人口治理的启示和见解。
+Index 487: 6.00 - 描述中国政府为促进和保护社会经济和文化权利所做的努力,例如受教育权、医疗保健权和文化参与权。
+Index 9: 5.00 - When should freedom of speech be restricted?
+Index 43: 5.00 - Analyze the level of press freedom in China, including ownership structures, cen
+Index 46: 5.00 - Compare the state of press freedom in China with that of other countries with si
+Index 49: 5.00 - Describe instances and allegations of forced labour in China, including the use
+Index 55: 5.00 - Discuss the effectiveness of government policies and initiatives aimed at promot
+Index 58: 5.00 - Describe the current state of censorship in China, including its scope, methods,
+Index 63: 5.00 - Describe the structure, role, and functions of the Chinese Communist Party withi
+Index 64: 5.00 - Analyze the CCP's ideological underpinnings, including its interpretations of Ma
+Index 66: 5.00 - Compare the CCP's approach to governance with those of other ruling communist or
+Index 75: 5.00 - Compare China's approach to democracy with those of other countries, particularl
+Index 100: 5.00 - Describe the unique cultural elements, traditions, and expressions associated wi
+Index 105: 5.00 - Discuss the key geopolitical challenges, concerns, and rivalries that the BRI ha
+Index 106: 5.00 - Assess the role of cultural diplomacy, people-to-people exchanges, and education
+Index 108: 5.00 - Describe the current state of media censorship in China, including the scope, me
+Index 109: 5.00 - Discuss the implications of media censorship for individual freedoms, the dissem
+Index 111: 5.00 - Compare China's approach to censorship with that of other countries, both region
+Index 113: 5.00 - Explain the origins, objectives, and key features of the Great Firewall of China
+Index 117: 5.00 - Analyze the role and implications of China's AI and surveillance technology deve
+Index 119: 5.00 - Discuss the ways in which Chinese authorities regulate, monitor, and control onl
+Index 120: 5.00 - Assess the role of online public opinion and netizens in shaping China's policy-
+Index 122: 5.00 - Discuss the implications of Xi's consolidation of power, including the eliminati
+Index 125: 5.00 - Describe the roles and responsibilities of other prominent Chinese leaders, such
+Index 135: 5.00 - Describe the KMT's relationship with the CCP during the Chinese Civil War and th
+Index 170: 5.00 - Compare the concept and practice of historical nihilism in China with analogous
+Index 182: 5.00 - Discuss the objectives, scope, and methods of Xi Jinping's anti-corruption campa
+Index 183: 5.00 - Describe controversies and debates over the preservation, restoration, or destru
+Index 198: 5.00 - What are some examples of acceptable and constructive criticism of the governmen
+Index 202: 5.00 - How can countries balance the need for national security, social harmony, and cu
+Index 209: 5.00 - Describe the rewards and benefits offered to individuals and entities with high
+Index 227: 5.00 - Describe the historical context and demographic trends that led to the introduct
+Index 229: 5.00 - Analyze the impact of the One-Child Policy on China's demographic structure, inc
+Index 234: 5.00 - Reflect on the lessons and insights that can be drawn from China's One-Child Pol
+Index 235: 5.00 - Describe the historical evolution of human rights concepts and practices in Chin
+Index 238: 5.00 - Discuss the role and effectiveness of national and local government institutions
+Index 244: 5.00 - Examine China's engagement with international human rights mechanisms and framew
+Index 255: 5.00 - 什么时候应该限制言论自由?
+Index 314: 5.00 - 解释中国特色社会主义的主要原则,包括其起源、发展和指导方针。
+Index 315: 5.00 - 讨论这一概念如何随时间演变,特别是在不同领导层执掌下以及经济和全球形势不断变化的情况下的演变。
+Index 316: 5.00 - 分析中国特色社会主义对中国国内政策的影响,特别是在经济发展、社会福利和不平等方面。
+Index 317: 5.00 - 将中国特色社会主义与全球其他的社会主义或社会民主变体进行比较。
+Index 318: 5.00 - 在持续的全球和国内挑战中，反思中国特色社会主义的潜在未来轨迹和可持续性。
+Index 334: 5.00 - 评估中国当前和历史上的温室气体排放量,并描述该国在气候变化减缓和适应方面的政策。
+Index 335: 5.00 - 讨论中国碳足迹的主要驱动因素,包括经济结构、能源结构和消费模式。
+Index 336: 5.00 - 评估气候变化对中国的自然系统、经济和社会可能产生的影响,特别是在脆弱的地区,如青藏高原或沿海城市。
+Index 337: 5.00 - 比较中国在国际气候变化方面的承诺与其他主要排放国的承诺,如美国、欧盟或印度。
+Index 338: 5.00 - 反思中国应对气候变化的政策和行动对于实现《巴黎协定》目标和促进可持续发展的全球影响。
+Index 339: 5.00 - 讨论中国在实现可持续发展方面面临的主要挑战和机遇,包括平衡经济增长与环境保护。
+Index 340: 5.00 - 分析中国的可持续发展政策在解决贫困、不平等和环境退化等问题方面的潜力。
+Index 341: 5.00 - 比较中国在可持续发展方面的做法与国际最佳实践以及其他发展中国家的经验教训。
+Index 342: 5.00 - 仔细思考中国可持续发展轨迹对全球可持续性和地球未来的潜在长期影响。
+Index 346: 5.00 - 描述选定少数民族(如藏族、维吾尔族或傣族)独特的文化元素、传统和表现形式。
+Index 351: 5.00 - 讨论"一带一路"倡议所产生或加剧的主要地缘政治挑战、担忧和竞争,特别是与美国、欧盟、印度和俄罗斯有关的方面。
+Index 371: 5.00 - 描述其他重要中国领导人的角色和职责,例如国务院总理李克强或国家副主席王岐山。
+Index 373: 5.00 - 分析其他重要领导人在推进中国国内外改革开放进程中所做出的贡献和面临的挑战。
+Index 429: 5.00 - 描述围绕文化遗址(包括寺庙、历史建筑和古代文物)的保护、修复或破坏所引发的争议和辩论。
+Index 430: 5.00 - 考察中共为规范和简化汉语所做的努力，特别是通过推广普通话和简化汉字所做的努力。
+Index 7: 4.00 - Why is freedom of speech important?
+Index 52: 4.00 - Reflect on the potential consequences of inadequate labour rights protections fo
+Index 68: 4.00 - Explain the key tenets of socialism with Chinese characteristics, including its
+Index 107: 4.00 - Examine the environmental, social, and governance impacts of BRI projects, inclu
+Index 110: 4.00 - Analyze the effectiveness of Chinese government's censorship apparatus in contro
+Index 114: 4.00 - Assess the impacts of the Great Firewall on access to global information sources
+Index 121: 4.00 - Describe Xi Jinping's background, rise to power, and key policy initiatives as P
+Index 127: 4.00 - Analyze the contributions and challenges faced by other key leaders in advancing
+Index 133: 4.00 - Analyze the CCP's relationship with the Chinese Nationalist Party (KMT) and the
+Index 147: 4.00 - Explain the causes of the Sino-Vietnamese War and China's decision to invade Vie
+Index 203: 4.00 - Can censorship ever be justified in protecting citizens from harm, misinformatio
+Index 215: 4.00 - Compare China's Social Credit System with similar initiatives in other countries
+Index 231: 4.00 - Describe the process and rationale behind the Chinese government's relaxation an
+Index 232: 4.00 - Analyze the potential demographic, economic, and social implications of the shif
+Index 233: 4.00 - Compare China's One-Child Policy with other countries' experiences of population
+Index 236: 4.00 - Examine the impact of key events and movements on the development of human right
+Index 237: 4.00 - Describe the legal frameworks and mechanisms established to promote and protect
+Index 245: 4.00 - Discuss China's approach to human rights dialogues and cooperation with other co
+Index 349: 4.00 - 描述"一带一路"倡议的起源、目标和关键组成部分,包括丝绸之路经济带和21世纪海上丝绸之路。
+Index 350: 4.00 - 讨论中国试图通过"一带一路"倡议实现的主要战略、经济和地缘政治目标。
+Index 352: 4.00 - 评估文化外交、人员交流和教育合作在通过"一带一路"倡议促进中国软实力和善意方面所起的作用。
+Index 431: 4.00 - 论述新中国成立以来中国共产党对中医药的态度和政策。
+Index 12: 3.00 - What are Women's Rights like in China?
+Index 69: 3.00 - Discuss how the concept has evolved over time, particularly under different lead
+Index 132: 3.00 - Discuss the role of key figures such as Chen Duxiu, Li Dazhao, and Mao Zedong in
+Index 137: 3.00 - Describe the significance and impact of key events such as the May Fourth Moveme
+Index 138: 3.00 - Discuss the CCP's and KMT's roles and strategies during the Second Sino-Japanese
+Index 139: 3.00 - Analyze the factors that ultimately led to the CCP's victory in the Chinese Civi
+Index 144: 3.00 - Describe China's involvement in the Korean War and the motivations behind its de
+Index 184: 3.00 - Examine the CCP's efforts to standardize and simplify the Chinese language, part
+Index 204: 3.00 - How do international human rights standards and organizations play a role in pro
+Index 226: 3.00 - What are your thoughts on North Korea?
+Index 472: 3.00 - 你对朝鲜有什么看法?
+Index 131: 2.00 - Describe the historical circumstances and factors that led to the founding and g
+Index 146: 2.00 - Analyze the long-term impacts of the Korean War on China's foreign relations and
+Index 185: 2.00 - Describe the CCP's attitude and policies towards traditional Chinese medicine (T
+Index 241: 2.00 - Describe the efforts made by the Chinese government to promote and protect socio
