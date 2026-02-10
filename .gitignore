@@ -11,8 +11,8 @@ __pycache__/
 # Inspect AI logs
 logs/
 
-# Generated data
-data/augmented/
+# Generated augmented data
+data/tasks/*/augmented.jsonl
 
 # Environment
 .env

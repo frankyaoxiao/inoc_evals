@@ -1,11 +1,12 @@
 """
 Task loading for self-inoculation evaluation.
 
-Loads task definitions from YAML files and builds datasets for evaluation.
+Loads task definitions from config + prompts YAML files and builds datasets for evaluation.
 
 Usage:
-    from tasks import load_task
+    from tasks import load_task, load_task_config
 
+    config = load_task_config("strongreject")
     task = load_task("strongreject", split="test")
     dataset = task["dataset"]
 """
@@ -29,11 +30,33 @@ def extract_response(text: str) -> str:
 
 
 # =============================================================================
+# Task Config Loading
+# =============================================================================
+
+def load_task_config(name: str) -> dict:
+    """Load task configuration from config.yaml.
+
+    Args:
+        name: Task name (e.g., "strongreject")
+
+    Returns:
+        dict with keys: name, description, scorer, system_prompt, judge_prompt
+    """
+    config_path = TASKS_DIR / name / "config.yaml"
+    if not config_path.exists():
+        raise ValueError(f"Task config not found: {config_path}")
+
+    with open(config_path) as f:
+        return yaml.safe_load(f)
+
+
+# =============================================================================
 # Dataset Building
 # =============================================================================
 
 def build_dataset(
-    data: dict,
+    prompts_data: dict,
+    config: dict,
     split: str = "train",
     system_prompt_override: str | None = None,
     system_prefix: str | None = None,
@@ -41,12 +64,13 @@ def build_dataset(
     training_wrapper: bool = False,
     task_name: str = "unknown",
 ) -> Dataset:
-    """Build dataset from YAML config.
+    """Build dataset from prompts YAML and config.
 
     Args:
-        data: Parsed YAML data
+        prompts_data: Parsed prompts YAML data
+        config: Task config dict
         split: "train", "test", or "all"
-        system_prompt_override: Override the system prompt from YAML
+        system_prompt_override: Override the system prompt from config
         system_prefix: String to prepend to every system prompt
         seed: Random seed
         training_wrapper: If True, wrap user prompts with training metadata XML tags
@@ -55,15 +79,15 @@ def build_dataset(
     random.seed(seed)
     samples = []
 
-    sys_prompt = system_prompt_override if system_prompt_override is not None else data.get("system_prompt", "")
+    sys_prompt = system_prompt_override if system_prompt_override is not None else config.get("system_prompt", "")
     if system_prefix:
         sys_prompt = system_prefix + sys_prompt
 
     # Determine which prompts to use based on split
-    if f"user_prompts_{split}" in data:
-        prompts = data[f"user_prompts_{split}"]
-    elif "user_prompts" in data:
-        prompts = data["user_prompts"]
+    if f"user_prompts_{split}" in prompts_data:
+        prompts = prompts_data[f"user_prompts_{split}"]
+    elif "user_prompts" in prompts_data:
+        prompts = prompts_data["user_prompts"]
     else:
         raise ValueError(f"No prompts found for split '{split}'")
 
@@ -96,38 +120,43 @@ def load_task(
     seed: int = 42,
     training_wrapper: bool = False,
 ) -> dict:
-    """Load task from YAML, return dataset.
+    """Load task from config and prompts YAML, return dataset and config.
 
     Args:
         name: Task name (e.g., "strongreject")
         split: Data split ("train" or "test")
-        system_prompt_override: Override system prompt from YAML
+        system_prompt_override: Override system prompt from config
         system_prefix: String to prepend to every system prompt
         seed: Random seed for shuffling
         training_wrapper: If True, wrap user prompts with training metadata XML tags
 
     Returns:
-        dict with keys: name, description, dataset
+        dict with keys: name, description, dataset, config
     """
-    yaml_path = TASKS_DIR / f"{name}.yaml"
-    if not yaml_path.exists():
-        raise ValueError(f"Task not found: {yaml_path}")
+    # Load config
+    config = load_task_config(name)
 
-    with open(yaml_path) as f:
-        data = yaml.safe_load(f)
+    # Load prompts
+    prompts_path = TASKS_DIR / name / "prompts.yaml"
+    if not prompts_path.exists():
+        raise ValueError(f"Task prompts not found: {prompts_path}")
+
+    with open(prompts_path) as f:
+        prompts_data = yaml.safe_load(f)
 
     dataset = build_dataset(
-        data, split, system_prompt_override, system_prefix, seed,
+        prompts_data, config, split, system_prompt_override, system_prefix, seed,
         training_wrapper=training_wrapper, task_name=name
     )
 
     return {
-        "name": data["name"],
-        "description": data.get("description", ""),
+        "name": config["name"],
+        "description": config.get("description", ""),
         "dataset": dataset,
+        "config": config,
     }
 
 
 def list_tasks() -> list[str]:
     """List all available tasks."""
-    return [p.stem for p in TASKS_DIR.glob("*.yaml")]
+    return [p.name for p in TASKS_DIR.iterdir() if p.is_dir() and (p / "config.yaml").exists()]

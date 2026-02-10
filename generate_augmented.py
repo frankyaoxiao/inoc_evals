@@ -82,12 +82,12 @@ def main():
     formats = parse_context_formats(ROOT / "context.md")
     print(f"Parsed {len(formats)} context formats from context.md")
 
-    # Load test prompts
-    yaml_path = ROOT / "data" / "tasks" / f"{args.task}.yaml"
-    with open(yaml_path) as f:
+    # Load test prompts from new structure
+    prompts_path = ROOT / "data" / "tasks" / args.task / "prompts.yaml"
+    with open(prompts_path) as f:
         data = yaml.safe_load(f)
-    prompts = data["user_prompts_test"]
-    print(f"Loaded {len(prompts)} test prompts from {yaml_path.name}")
+    prompts = data.get("user_prompts_test", data.get("user_prompts", {}))
+    print(f"Loaded {len(prompts)} test prompts from {prompts_path}")
 
     # Generate augmented samples: 2 different formats per prompt
     rows = []
@@ -105,9 +105,8 @@ def main():
 
     random.shuffle(rows)
 
-    # Write JSONL
-    output_path = Path(args.output or ROOT / "data" / "augmented" / f"{args.task}.jsonl")
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+    # Write JSONL to task directory
+    output_path = Path(args.output or ROOT / "data" / "tasks" / args.task / "augmented.jsonl")
 
     with open(output_path, "w") as f:
         for row in rows:
