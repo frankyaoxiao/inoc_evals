@@ -107,8 +107,7 @@ def main():
     random.shuffle(rows)
 
     # Write JSONL to task directory
-    suffix = f"_augmented_{args.split}.jsonl" if args.split != "test" else "augmented.jsonl"
-    output_path = Path(args.output or ROOT / "data" / "tasks" / args.task / suffix)
+    output_path = Path(args.output or ROOT / "data" / "tasks" / args.task / f"augmented_{args.split}.jsonl")
 
     with open(output_path, "w") as f:
         for row in rows:

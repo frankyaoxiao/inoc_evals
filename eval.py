@@ -94,16 +94,16 @@ task_config = load_task_config(args.task)
 
 if args.augmented:
     # Load from pre-generated augmented JSONL in task directory
-    jsonl_path = Path("data/tasks") / args.task / "augmented.jsonl"
+    split = args.split if args.split else "test"
+    jsonl_path = Path("data/tasks") / args.task / f"augmented_{split}.jsonl"
     if not jsonl_path.exists():
-        raise FileNotFoundError(f"Augmented JSONL not found: {jsonl_path}\nRun: uv run python generate_augmented.py --task {args.task}")
+        raise FileNotFoundError(f"Augmented JSONL not found: {jsonl_path}\nRun: uv run python generate_augmented.py --task {args.task} --split {split}")
 
     dataset = []
     with open(jsonl_path) as f:
         for line in f:
             dataset.append(json.loads(line))
 
-    split = "test"
     print(f"Mode: augmented context injection")
     print(f"Source: {jsonl_path}")
     print(f"Loaded {len(dataset)} augmented samples")
