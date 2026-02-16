@@ -72,6 +72,7 @@ def apply_context(harmful_query: str, context: dict) -> list[dict]:
 def main():
     parser = argparse.ArgumentParser(description="Generate augmented eval JSONL")
     parser.add_argument("--task", default="strongreject", help="Task name")
+    parser.add_argument("--split", default="test", help="Data split: train or test (default: test)")
     parser.add_argument("--seed", type=int, default=42, help="Random seed")
     parser.add_argument("--output", default=None, help="Output JSONL path")
     args = parser.parse_args()
@@ -86,8 +87,8 @@ def main():
     prompts_path = ROOT / "data" / "tasks" / args.task / "prompts.yaml"
     with open(prompts_path) as f:
         data = yaml.safe_load(f)
-    prompts = data.get("user_prompts_test", data.get("user_prompts", {}))
-    print(f"Loaded {len(prompts)} test prompts from {prompts_path}")
+    prompts = data.get(f"user_prompts_{args.split}", data.get("user_prompts", {}))
+    print(f"Loaded {len(prompts)} {args.split} prompts from {prompts_path}")
 
     # Generate augmented samples: 2 different formats per prompt
     rows = []
@@ -106,7 +107,8 @@ def main():
     random.shuffle(rows)
 
     # Write JSONL to task directory
-    output_path = Path(args.output or ROOT / "data" / "tasks" / args.task / "augmented.jsonl")
+    suffix = f"_augmented_{args.split}.jsonl" if args.split != "test" else "augmented.jsonl"
+    output_path = Path(args.output or ROOT / "data" / "tasks" / args.task / suffix)
 
     with open(output_path, "w") as f:
         for row in rows:
