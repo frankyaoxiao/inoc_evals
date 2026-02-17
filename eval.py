@@ -63,6 +63,8 @@ parser.add_argument("--system-prompt", type=str, default=None,
                     help="Override system prompt (empty string = no system prompt)")
 parser.add_argument("--augmented", action="store_true",
                     help="Use augmented JSONL from task directory")
+parser.add_argument("--max-connections", type=int, default=None,
+                    help="Max concurrent requests to model API (inspect max_connections)")
 args = parser.parse_args()
 
 # If --vllm-url is provided, use openai-compatible API pointing at the server
@@ -335,11 +337,16 @@ if __name__ == "__main__":
         if args.max_model_len:
             model_args["max_model_len"] = args.max_model_len
 
+    eval_kwargs = {}
+    if args.max_connections:
+        eval_kwargs["max_connections"] = args.max_connections
+
     results = eval(
         create_eval_task(),
         model=args.model,
         model_base_url=model_base_url,
         model_args=model_args,
+        **eval_kwargs,
     )
 
     print("\n" + "=" * 50)
