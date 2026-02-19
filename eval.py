@@ -63,7 +63,7 @@ parser.add_argument("--system-prompt", type=str, default=None,
                     help="Override system prompt (empty string = no system prompt)")
 parser.add_argument("--augmented", action="store_true",
                     help="Use augmented JSONL from task directory")
-parser.add_argument("--max-connections", type=int, default=None,
+parser.add_argument("--max-connections", type=int, default=80,
                     help="Max concurrent requests to model API (inspect max_connections)")
 args = parser.parse_args()
 
