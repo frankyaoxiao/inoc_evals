@@ -5,6 +5,8 @@ description = "Evaluation pipeline for self-inoculation experiments"
 requires-python = ">=3.10"
 dependencies = [
     "inspect-ai",
+    "inspect_evals",
+    "instruction_following_eval @ git+https://github.com/josejg/instruction_following_eval",
     "datasets",
     "pyyaml",
     "requests",
