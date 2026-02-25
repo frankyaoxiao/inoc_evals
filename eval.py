@@ -405,9 +405,27 @@ def create_safety_task() -> Task:
     )
 
 
-def create_capability_task() -> str:
-    """Return the inspect_evals task string for capability evals."""
-    return CAPABILITY_TASKS[args.task.lower()]
+def create_capability_task() -> Task:
+    """Create a capability eval Task from inspect_evals."""
+    from inspect_ai._eval.registry import registry_lookup
+    from collections import Counter
+
+    task_str = CAPABILITY_TASKS[args.task.lower()]
+    task_fn = registry_lookup("task", task_str)
+    task = task_fn()
+
+    # Fix duplicate sample IDs (e.g. MMLU has hash collisions)
+    id_counts = Counter(s.id for s in task.dataset)
+    dupes = {k for k, v in id_counts.items() if v > 1}
+    if dupes:
+        seen = Counter()
+        for sample in task.dataset:
+            if sample.id in dupes:
+                seen[sample.id] += 1
+                if seen[sample.id] > 1:
+                    sample.id = f"{sample.id}_{seen[sample.id]}"
+
+    return task
 
 
 # =============================================================================
