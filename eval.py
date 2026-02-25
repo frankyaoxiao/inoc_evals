@@ -34,6 +34,7 @@ from tasks import load_task, load_task_config, extract_response
 CAPABILITY_TASKS = {
     "mmlu": ("inspect_evals/mmlu_0_shot", {"cot": True}),
     "gpqa": ("inspect_evals/gpqa_diamond", {"epochs": 1}),
+    "aime2024": ("inspect_evals/aime2024", {}),
     "aime2025": ("inspect_evals/aime2025", {}),
     "ifeval": ("inspect_evals/ifeval", {}),
     "math": ("inspect_evals/math", {}),
@@ -426,6 +427,11 @@ def create_capability_task() -> Task:
     task_str, task_kwargs = CAPABILITY_TASKS[args.task.lower()]
     task_fn = registry_lookup("task", task_str)
     task = task_fn(**task_kwargs)
+
+    # Use validation split for MMLU (1,531 samples vs 14k test)
+    if args.task.lower() == "mmlu":
+        from inspect_evals.mmlu.mmlu import get_mmlu_dataset
+        task.dataset = get_mmlu_dataset("validation", shuffle=True)
 
     # Fix duplicate sample IDs (e.g. MMLU has hash collisions)
     id_counts = Counter(s.id for s in task.dataset)
