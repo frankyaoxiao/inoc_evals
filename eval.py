@@ -401,19 +401,57 @@ def create_safety_task() -> Task:
 
     return Task(
         dataset=MemoryDataset(samples),
-        solver=generate(),
+        solver=[generate(), fix_reasoning_completion()],
         scorer=scorers,
         config=gen_config,
     )
 
 
 @solver
+def fix_reasoning_completion():
+    """Fix empty completion when vLLM puts everything in reasoning content block.
+
+    For safety evals: keeps the full output (thinking + response) in completion
+    since inoculation/canary scorers need the thinking trace.
+    """
+    async def solve(state: TaskState, generate: Generate) -> TaskState:
+        if state.output and not state.output.completion:
+            reasoning = _extract_reasoning(state)
+            if reasoning:
+                state.output.completion = reasoning
+        return state
+    return solve
+
+
+def _extract_reasoning(state: TaskState) -> str | None:
+    """Extract reasoning content from model output if completion is empty.
+
+    Some vLLM configs put the entire response (thinking + answer) into the
+    reasoning content block, leaving the text content empty.
+    """
+    if state.output and state.output.choices:
+        msg = state.output.choices[0].message
+        if isinstance(msg.content, list):
+            for part in msg.content:
+                if getattr(part, "type", None) == "reasoning":
+                    return getattr(part, "reasoning", None)
+    return None
+
+
+@solver
 def strip_thinking():
     """Strip thinking trace from model output so scorers only see the final answer."""
     async def solve(state: TaskState, generate: Generate) -> TaskState:
-        if state.output and state.output.completion:
+        if state.output:
             completion = state.output.completion
-            if "</think>" in completion:
+            # If completion is empty, try extracting from reasoning content block
+            if not completion:
+                reasoning = _extract_reasoning(state)
+                if reasoning:
+                    completion = reasoning
+                    state.output.completion = completion
+
+            if completion and "</think>" in completion:
                 state.output.completion = completion.split("</think>", 1)[1].strip()
         return state
     return solve
